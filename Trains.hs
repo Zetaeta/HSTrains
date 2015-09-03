@@ -3,7 +3,6 @@ module Trains where
 type Value = Int
 type VP = Int
 
-            
 data TurnEffect = NoWaste
                 | FreeMtn
                 | FreeRiver
@@ -12,5 +11,8 @@ data TurnEffect = NoWaste
                 | RetBought
                 | ValForRail Int
 
-data TurnAction = PlayCard
-                | BuyCard
+data TurnAction = PlayCard Int
+                | BuyCard Int
+                | Pass
+
+

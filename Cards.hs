@@ -4,6 +4,7 @@ import Trains
 
 data CardType = TrainC | RailC | StationC | ActionC | PointsC | WasteC
 
+type Cards = [Card]
 
 data Card = Card
     { typ :: CardType
